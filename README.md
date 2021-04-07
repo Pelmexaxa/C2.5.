@@ -25,4 +25,5 @@ https://kivy.org/doc/stable/gettingstarted/installation.html#installation-canoni
 
 
 P.S. Если вы используете Anaconda, вы можете установить Kivy с его менеджером пакетов Conda с помощью:
+
 conda install kivy -c conda-forge
