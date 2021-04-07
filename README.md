@@ -11,6 +11,8 @@ https://kivy.org/doc/stable/gettingstarted/installation.html#installation-canoni
 
 python -m pip install --upgrade pip wheel setuptools
 
+
+
 2 Затем установите основные зависимости:
 
 python -m pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
