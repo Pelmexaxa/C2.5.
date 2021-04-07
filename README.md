@@ -23,10 +23,10 @@ https://kivy.org/doc/stable/gettingstarted/installation.html#installation-canoni
 >python -m pip install kivy
 
 
-h1 ДЛЯ ЗАПУСКА НУЖНЫ ВСЕ 3 ФАЙЛА:
->TABLE.py
->main.py
->my.kv
+ДЛЯ ЗАПУСКА НУЖНЫ ВСЕ 3 ФАЙЛА:
+>TABLE.py.
+>main.py.
+>my.kv.
 
 
 P.S. Если вы используете Anaconda, вы можете установить Kivy с его менеджером пакетов Conda с помощью:
