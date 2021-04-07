@@ -23,7 +23,7 @@ https://kivy.org/doc/stable/gettingstarted/installation.html#installation-canoni
 >python -m pip install kivy
 
 
-ДЛЯ ЗАПУСКА НУЖНЫ ВСЕ 3 ФАЙЛА:
+h1 ДЛЯ ЗАПУСКА НУЖНЫ ВСЕ 3 ФАЙЛА:
 >TABLE.py
 >main.py
 >my.kv
