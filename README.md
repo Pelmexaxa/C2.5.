@@ -7,14 +7,17 @@
 https://kivy.org/doc/stable/gettingstarted/installation.html#installation-canonical
 
 
-1 Во-первых, убедитесь, что инструменты python обновлены.
+1 Во-первых, убедитесь, что инструменты python обновлены:
+
 python -m pip install --upgrade pip wheel setuptools
 
 2 Затем установите основные зависимости:
+
 python -m pip install docutils pygments pypiwin32 kivy.deps.sdl2 kivy.deps.glew
+
 python -m pip install kivy.deps.gstreamer --extra-index-url https://kivy.org/downloads/packages/simple/
 
-3 Стави Kivy:
+3 Ставим Kivy:
 python -m pip install kivy
 
 
