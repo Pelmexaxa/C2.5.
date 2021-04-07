@@ -1,0 +1,160 @@
+<MenuScreen>:
+    name: 'menu_screen'
+    id: menu_screen
+    
+    AnchorLayout:
+        anchor_x: "center"
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: (0.6, 0.8)
+            spacing: 30
+            
+            Button:
+                text: 'Начать игру'
+                on_press: root.start_game()
+            Button:
+                text: 'Настройки (Comming soon...)'
+            Button:
+                size_hint_y: 0.5
+                text: 'Выйти'
+                on_press: root.exitt()
+
+
+<GameScreen>:
+    name: 'game_screen'
+    id: game_screen
+    
+    BoxLayout:
+        size_hint: (1, 0.5)
+        orientation: 'horizontal'
+        padding: 20
+        
+        Label:
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            text: 'Ваше поле'
+        Label:
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            text: 'Поле компьютера'
+    
+    BoxLayout:
+        size_hint: (1, 0.5)
+        orientation: 'horizontal'
+        padding: 20
+        background_color : '4,4,4,1'
+        #Label:
+        #    id: info_ship_status_CPU
+        #    text_size: self.size
+        #    halign: 'center'
+        #    valign: 'middle'
+        #    text: ' '
+        Label:
+            
+            id: info_ship_status
+            text_size: self.size
+            halign: 'center'
+            valign: 'middle'
+            text: ' '
+    
+    AnchorLayout:
+        anchor_x: "center"
+        id: al_game_screen
+        
+        BoxLayout:
+            orientation: 'vertical'
+        
+            BoxLayout:
+                id: bl_game_screen
+                size_hint: (1, 0.65)
+                padding: 40
+                orientation: 'horizontal'
+                spacing: 20
+                
+                GridLayout:
+                    spacing: 5
+                    id: gridplayer_game_screen
+                    cols : 11
+                    rows : 11
+                
+                GridLayout:
+                    id: lable_game_screen
+                    cols : 1
+                    rows : 11
+                    size_hint: (0.1, 1)
+                
+                GridLayout:
+                    spacing: 5
+                    id: gridcpu_game_screen
+                    cols : 11
+                    rows : 11
+            
+            AnchorLayout:
+                size_hint: (1, 0.2)
+                anchor_x: "center"
+            
+                BoxLayout:
+                    size_hint: (1, 0.8) 
+                    padding: 20
+                    orientation: 'horizontal'
+                    spacing: 30
+            
+                    Button:
+                        text: 'Настройки'
+                    Button:
+                        text: 'Выйти'
+                        on_press: root.exitt()
+        
+
+<GameScreenWin>:
+    name: 'game_screen_win'
+    id: game_screen_win
+    
+    AnchorLayout:
+        size_hint: (1, 1)
+        anchor_x: "center"
+        anchor_y: "center"
+
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: (0.2, 0.4) 
+            padding: 20
+            spacing: 30
+            
+            Label:
+                id: info_ship_status
+                text_size: self.size
+                halign: 'center'
+                valign: 'middle'
+                text: 'Вы победили! )'
+            Button:
+                text: 'Выйти'
+                on_press: root.exitt()
+    
+<GameScreenDefeat>:
+    name: 'game_screen_defeat'
+    id: game_screen_defeat
+    
+    AnchorLayout:
+        size_hint: (1, 1)
+        anchor_x: "center"
+        anchor_y: "center"
+        
+        BoxLayout:
+            orientation: 'vertical'
+            size_hint: (0.2, 0.4) 
+            padding: 20
+            spacing: 30
+        
+            Label:
+                id: info_ship_status
+                text_size: self.size
+                halign: 'center'
+                valign: 'middle'
+                text: 'Вы проиграли ('
+        
+            Button:
+                text: 'Выйти'
+                on_press: root.exitt()
