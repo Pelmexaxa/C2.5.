@@ -2,6 +2,9 @@
 
 Задача для зачёта второго модуля на SkillBox C2.5. Итоговое практическое задание
 
+В папке SeaBattle - EXE лежит скомпилированный под Windows файл (SeaBattle.exe).
+Для запуска не потребуется устанавливать Kivy.
+
 Для работы с данным приложением нужно установить framework - Kivy
 Гайд по установке Kivy:
 https://kivy.org/doc/stable/gettingstarted/installation.html#installation-canonical
